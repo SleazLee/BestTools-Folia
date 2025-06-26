@@ -1,6 +1,8 @@
 package de.jeff_media.BestTools;
 
 import org.bukkit.Bukkit;
+
+import de.jeff_media.BestTools.Scheduler;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -174,8 +176,8 @@ public class GUIHandler implements Listener {
     void open(Player p) {
         Inventory inv = create(p);
         p.closeInventory();
-        Bukkit.getScheduler().runTask(main,() -> {
-           p.openInventory(inv);
+        Scheduler.run(() -> {
+            p.openInventory(inv);
         });
     }
 

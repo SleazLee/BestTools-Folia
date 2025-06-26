@@ -2,6 +2,8 @@ package de.jeff_media.BestTools;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+
+import de.jeff_media.BestTools.Scheduler;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -57,7 +59,7 @@ public class RefillUtils {
     }
 
     void refillStack(Inventory inv, int source, int dest, ItemStack stack) {
-        Bukkit.getScheduler().runTask(main, () -> {
+        Scheduler.run(() -> {
             if(inv.getItem(source)==null) return;
             if(!inv.getItem(source).equals(stack)) {
                 main.debug("Refill failed, because source ItemStack has changed. Aborting Refill to prevent item loss.");
