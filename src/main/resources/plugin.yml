@@ -1,7 +1,8 @@
 main: de.jeff_media.BestTools.Main
-name: BestTools
+name: BestTools-Folia
 version: ${project.version}
-api-version: "1.16"
+api-version: "1.21.5"
+folia-supported: true
 description: Automatically chooses the best tool when breaking blocks
 author: mfnalex
 #website: https://www.chestsort.de
