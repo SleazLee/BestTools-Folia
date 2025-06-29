@@ -1,6 +1,6 @@
 package de.jeff_media.BestTools;
 
-import de.jeff_media.BestTools.events.BestToolsNotifyEvent;
+/*import de.jeff_media.BestTools.events.BestToolsNotifyEvent;*/
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -77,7 +77,7 @@ public class BestToolsListener implements Listener {
 
     }
 
-    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+/*    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     public void onBreak(BlockBreakEvent event) {
         //System.out.println("BlockBreakEvent LISTENER");
         //System.out.println(event.getBlock());
@@ -90,7 +90,7 @@ public class BestToolsListener implements Listener {
     @EventHandler
     public void onNotify(BestToolsNotifyEvent event) {
         onPlayerInteractWithBlock(new PlayerInteractEvent(event.getPlayer(), Action.LEFT_CLICK_BLOCK, event.getPlayer().getInventory().getItemInMainHand(),event.getBlock(),BlockFace.SELF,EquipmentSlot.HAND));
-    }
+    }*/
 
     @EventHandler
     public void onPlayerInteractWithBlock(PlayerInteractEvent event) {

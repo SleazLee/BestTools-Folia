@@ -1,4 +1,4 @@
-package de.jeff_media.BestTools.events;
+/*package de.jeff_media.BestTools.events;
 
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -29,4 +29,4 @@ public class BestToolsNotifyEvent extends PlayerEvent {
     public static HandlerList getHandlerList() {
         return HANDLERS;
     }
-}
+}*/
